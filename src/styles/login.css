@@ -1,0 +1,111 @@
+/*Sign Up Page*/
+body{
+    display: flex;
+    flex-direction: column;
+    background-color:#EDEFD5;
+    padding: 0px;
+    margin: 0%;
+
+
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    position: absolute;
+    align-self: center;
+    top: 17%;
+    max-width: "100%"
+    text-align: "center"
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'TAN - NIMBUS';
+    color:#44705c ;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+   
+}
+
+label {
+    margin-bottom: 5px;
+    font-family: 'Lilita One', Helvetica, sans-serif;
+}
+
+input[type="email"],
+input[type="password"] {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #44705c;
+    color: #EDEFD5;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Lilita One', Helvetica, sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+input[type="submit"]:hover {
+    background-color: #86b499;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 .5rem .75rem rgb(0,0,0,.3);
+}
+
+.logo {
+    cursor: pointer;
+    height: 80px;
+    width: auto;
+}
+
+li, a {
+    font-family: 'Lilita One', Helvetica, sans-serif;
+    color: #44705c;
+    font-weight: 500;
+    text-decoration: none;
+    margin: 10px;
+    font-size: 20px;
+}
+
+.nav-links li{
+    display: inline-block;
+}
+
+.nav-links li a{
+    transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover{
+    color:#86b499;
+}
+
+@media only screen and (max-width: 479px){
+    .logo{
+        height: 60px;
+        margin-right: 0%;
+        padding-right: 0%;
+    }
+    li, a {
+        margin-left: 0%;
+    }
+}

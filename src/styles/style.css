@@ -1,0 +1,303 @@
+/*Home page*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 .5rem .75rem rgb(0, 0, 0, .3);
+
+}
+
+.logo {
+    cursor: pointer;
+    height: 80px;
+    width: auto;
+}
+
+li,
+a {
+    font-family: 'Lilita One', Helvetica, sans-serif;
+    color: #44705c;
+    font-weight: 500;
+    text-decoration: none;
+    margin: 10px;
+    font-size: 20px;
+}
+
+.nav-links li {
+    display: inline-block;
+}
+
+.nav-links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover {
+    color: #86b499;
+}
+
+body {
+    background-color: #EDEFD5;
+    margin-top: 0%;
+    margin-inline: 0%;
+}
+
+.content {
+    margin-top: 100px;
+    margin-left: 5%;
+    font-family: 'Lilita One', Helvetica;
+}
+
+.content h1 {
+    color: #44705c;
+    margin-bottom: 0px;
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.content p {
+    margin-top: 0%;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Fraunces 9pt Thin';
+}
+
+.mobileqr {
+    height: 235px;
+    width: auto;
+    position: absolute;
+    right: 0%;
+    top: 12%;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 1rem;
+    background-color: #EDEFD5;
+    color: #44705c;
+    font-size: 40px;
+    padding: 2%;
+    transition: all 0.3s ease 0s;
+
+}
+
+.getstarted {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 200px;
+    padding: 5%;
+    position: sticky;
+    background-color: #44705c;
+}
+
+.getstarted h2 {
+
+    font-family: 'Lilita One', Helvetica;
+    font-size: 35px;
+    color: #EDEFD5;
+    font-weight: 500;
+}
+
+.getstarted a:hover {
+    background-color: #86b499;
+    color: #EDEFD5;
+}
+
+.monthselector {
+    left: 0%;
+    padding: 0%;
+}
+
+.months li {
+    display: inline-flex;
+    left: 10%;
+    margin-left: 4%;
+}
+
+.months li a {
+    transition: all 0.3s ease 0s;
+}
+
+.months li a:hover {
+    color: #86b499;
+}
+
+.pricing {
+    margin-top: 0px;
+    margin-left: 6%;
+    font-family: 'Lilita One', Helvetica;
+    margin-bottom: 0%;
+}
+
+.pricing h3 {
+    color: #44705c;
+    margin-bottom: 0px;
+    font-size: 60px;
+    font-weight: 500;
+    margin-top: 0%;
+}
+
+.benifits p {
+    margin-top: 0%;
+    font-size: 35px;
+    font-weight: bold;
+    font-family: 'Fraunces 9pt Thin';
+}
+
+.benifits {
+    margin-top: 0%;
+    margin-left: 6%;
+    font-family: 'Lilita One', Helvetica;
+    padding-top: 0%;
+}
+
+.price h4 {
+    color: #44705c;
+    margin-bottom: 0px;
+    font-size: 60px;
+    font-weight: 500;
+    margin-top: auto;
+}
+
+.standqr {
+    height: 300px;
+    width: auto;
+    float: inline-end;
+}
+
+.btn5 {
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 1rem;
+    background-color: #44705c;
+    color: #EDEFD5;
+    font-size: 35px;
+    padding: 1.5%;
+    padding-inline: 5%;
+    transition: all 0.3s ease 0s;
+    margin-left: 10%;
+
+}
+
+.price a:hover {
+    background-color: #86b499;
+    color: #EDEFD5;
+}
+
+.price {
+    display: flex;
+    margin-top: 0px;
+    margin-left: 6%;
+    font-family: 'Lilita One', Helvetica;
+
+}
+
+.wave1 {
+    opacity: 0%;
+}
+
+.wave {
+    opacity: 0%;
+}
+
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+    body {
+        width: max-content;
+        height: max-content;
+    }
+
+    .mobileqr {
+        position: fixed;
+        right: 0%;
+        height: 150px;
+        top: 120px;
+    }
+
+    .content h1 {
+        font-size: 28px;
+    }
+
+    .content p {
+        font-size: 19px;
+    }
+
+    .content {
+        margin-left: 4%;
+        margin-top: 80px;
+    }
+
+    .getstarted {
+        margin-top: 120px;
+    }
+
+    .btn {
+        font-size: 25px;
+    }
+
+    .getstarted h2 {
+        font-size: 25px;
+    }
+
+    .months {
+        padding: 0%;
+        margin-right: 0%;
+    }
+
+    .monthselector {
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    .months li {
+        position: relative;
+        left: 0%;
+        margin-right: 0%;
+        padding: 0%;
+    }
+
+    .pricing h3 {
+        font-size: 40px;
+    }
+
+    .benifits p {
+        font-size: 25px;
+        margin-bottom: 0%;
+    }
+
+    .price h4 {
+        font-size: 40px;
+        margin-top: 50%;
+    }
+
+    .standqr {
+        height: 280px;
+        right: 0%;
+        margin-right: 0%;
+
+    }
+
+    .btn5 {
+        font-size: 25px;
+        margin-top: 53%;
+    }
+
+    .wave1 {
+        position: absolute;
+        bottom: 61%;
+        height: 33.171px;
+        width: max-content;
+    }
+
+    .wave {
+        position: absolute;
+        bottom: 46%;
+        height: 33.171px;
+        width: max-content;
+    }
+
+}
